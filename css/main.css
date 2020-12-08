@@ -1,0 +1,399 @@
+/* ================================ GENERAL
+======================================== */
+body {
+    font-family: 'Roboto', 'Cinzel', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(http://go-hiking.ru/github/lumberjack/background.jpg);
+    background-size: contain;
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-color: #141218;
+    background-position: top right;
+    z-index: 1;
+}
+.inner {
+    z-index: 3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* ================================= HEADER
+======================================== */
+.menu-button {
+    display: none;
+}
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 60px;
+    margin-bottom: 90px;
+}
+.logo {
+    max-width: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1100px;
+    z-index: 15;
+}
+.menu-list {
+    margin-right: auto;
+    margin-left: 60px;
+}
+.menu-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 22px;
+}
+.social-link {
+    margin-left: 20px;
+}
+/* =================================== MAIN
+======================================== */
+.main-content {
+    display: flex;
+    margin-bottom: 85px;
+}
+.content {
+    width: 100%;
+}
+.poster {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+} 
+
+.genre {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 16px;
+    display: block;
+    animation-delay: 0.1s;
+}
+.rating {
+    display: flex;
+    margin-bottom: 10px;
+    animation-delay: 0.3s;
+}
+.rating-number {
+    margin-left: 10px;
+}
+.main-title {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 69px;
+    margin-bottom: 10px;
+    animation-delay: 0.5s;
+}
+.main-description {
+    max-width: 450px;
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 40px;
+    animation-delay: 0.7s;
+}
+.alert {
+    color: #9D2929;
+}
+strong {
+    text-decoration: underline;
+}
+.main-description p {
+    margin-bottom: 10px;
+}
+.main-description-artists {
+    margin-bottom: 52px;
+}
+.onw {
+    animation-delay: 0.9s;
+}
+.onward {
+    width: 260px;
+    height: 60px;
+    background: #9D2929;
+    border-radius: 8px;
+    border: none;
+    padding: 22px 72px 22px 72px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.play {
+    background-color: #9D2929;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 1s ease-in-out 0.5s infinite;
+}
+.play:before {
+    content: '';
+    background: #9D2929;
+    opacity: 0.5;
+    width: 132px;
+    height: 132px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: -16px;
+    top: -16px;
+}
+.play-svg {
+    position: relative;
+    transform: translateX(5px);
+}
+
+/* ========================= SLIDER
+================================ */
+
+.screenshots {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 60px;
+    position: relative;
+    max-width: 420px;
+}
+.swiper-container {
+    margin-left: 0px;
+    max-width: 420px;
+    position: relative;
+}
+
+.card-subtitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+.card-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+.screen-1 {
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url(https://st.kp.yandex.net/im/kadr/2/4/7/kinopoisk.ru-Forest-Warrior-2475902.jpg);
+}
+.screen-2 {
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url(https://st.kp.yandex.net/im/kadr/1/4/9/kinopoisk.ru-Forest-Warrior-1495960.jpg);
+}
+.screen-3 {
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url(https://st.kp.yandex.net/im/kadr/2/3/4/kinopoisk.ru-Forest-Warrior-2345465.jpg);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 164px;
+    height: 132px;
+    border-radius: 8px;
+    justify-content: flex-end;
+    padding: 13px;
+    margin-right: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.arrow {
+    width: 48px;
+    height: 32px;
+    background: url(/images/arrow.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    right: -58px;
+    z-index: 500;
+    cursor: pointer;
+}
+/* ========================= FOOTER
+================================ */
+
+
+.footer {
+    background-color: #141218;
+    padding: 20px 0;
+    margin-top: auto;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-link, .copyright {
+    text-decoration: none;
+    color: #3a383d;
+}
+.footer-link {
+    margin-left: 25px;
+}
+
+
+/* ======================== RESPONSIVE
+=================================== */
+
+@media(max-width: 760px) {
+    .play {
+        display: none;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+        padding-top: 24px;
+    }
+    .left {
+        margin-bottom: 8px;
+    }
+    .footer-link:first-child {
+        margin-left: 0px;
+    }
+   .poster {
+       display: none;
+   }
+}
+@media(max-width: 595px) {
+    body:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.5);
+        z-index: 2;
+      }
+      
+    .menu-mobile {
+        height: 25px;
+        width: 30px;
+        position: absolute;
+        top: 40px;
+        right: 35px;
+        cursor: pointer;
+    }
+    .container {
+        width: 95%;
+    }
+    .main-content {
+        margin-top: 150px;
+    }
+   .menu-button {
+        display: block;
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 9px;
+        right: 0px;
+        background-color: #FFFFFF;
+   } 
+   .menu-button:before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        transition: transform 0.2s;
+        margin-top: 7px;
+   } 
+   .menu-button:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        transition: transform 0.2s;
+        margin-top: -7px;
+   } 
+    .menu-button-active {
+        height: 0px;
+    }
+    .menu-button-active:before {
+        transform: rotate(45deg);
+        margin-top: 0px;
+    }
+    .menu-button-active:after {
+        transform: rotate(-45deg);
+        margin-top: 0px;
+    }
+   .main-title {
+        font-size: 36px;
+   }
+   .header {
+        background-color: #9D2929;
+        flex-direction: column;
+        position: absolute;
+        width: 250px;
+        right: 0px;
+        top: 0px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        display: none;
+   }
+   .header-active {
+        display: flex;
+   }
+   .logo {
+       margin: auto;
+       margin-bottom: 25px;
+   }
+   .menu-list {
+       margin: auto;
+       order: 2;
+       display: flex;
+       flex-direction: column;
+   }
+   .menu-link {
+       margin-right: 0px;
+       margin: auto;
+       margin-bottom: 17px;
+   }
+   .social {
+       margin: auto;
+       order: 1;
+       margin-bottom: 22px;
+   }
+   .social-link:first-child {
+       margin-left: 0px;
+   }
+   .screenshots {
+       width: 80%;
+   }
+}
