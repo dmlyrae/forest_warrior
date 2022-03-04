@@ -302,6 +302,7 @@ strong {
         top: 40px;
         right: 35px;
         cursor: pointer;
+        z-index: 1050;
     }
     .container {
         width: 95%;
@@ -368,7 +369,8 @@ strong {
         display: none;
    }
    .header-active {
-        display: flex;
+       display: flex;
+       z-index: 500;
    }
    .logo {
        margin: auto;
