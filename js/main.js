@@ -3,7 +3,7 @@ window.onload = function() {
         direction: 'horizontal',
         loop: true,
         slidesPerView: 1,
-        width: 438,
+        /*width: 438,*/
         spaceBetween: 10,
         navigation: {
             nextEl: '.arrow',
