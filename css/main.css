@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: url(http://go-hiking.ru/github/lumberjack/background.jpg);
+    background: url(../images/background.jpg);
     background-size: contain;
     background-blend-mode: lighten;
     background-repeat: no-repeat;
