@@ -183,6 +183,7 @@ strong {
     margin-left: 0px;
     max-width: 420px;
     position: relative;
+    overflow: hidden;
 }
 
 .card-subtitle {
